@@ -58,6 +58,30 @@ body {
 .logo {
     padding: 22px 0;
 }
-.logo-img { width: 80px; }
 
-.logo-text { width: 170px; }
+.logo img {
+    width: 250px;
+}
+
+.main-menu {
+    display: table;
+    margin: 0 auto;
+}
+
+.main-menu>li {
+    display: inline-block;
+    padding: 44px 0;
+}
+
+.main-menu>li:first-child>a {
+    padding-left: 0;
+}
+
+.main-menu>li>a {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 20px;
+    line-height: 29px;
+}
