@@ -215,8 +215,15 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <div class="header-main">
+                <div class="header-main-dark">
                     Наши модели
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="header-main-light">
+                    <a href="#">Перейти в каталог</a>
                 </div>
             </div>
         </div>
@@ -302,8 +309,15 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <div class="header-main">
+                <div class="header-main-dark">
                     Мы в instagram
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="header-main-light">
+                    <a href="https://www.instagram.com/levelpro_68/" target="_blank">#LEVELPRO68</a>
                 </div>
             </div>
         </div>
@@ -424,7 +438,10 @@
     var userFeed = new Instafeed({
         get: 'user',
         userId: '3442837669',
-        accessToken: '3442837669.d6f6d4a.601810ef0db54270a4ae9325770e3d0a'
+        accessToken: '3442837669.d6f6d4a.601810ef0db54270a4ae9325770e3d0a',
+        limit: 8,
+        resolution: 'thumbnail',
+        template: '<div class="col-xs-6 col-sm-4 col-md-3"><a href={{link}} target="_blank"><div class="item-img"><img src={{image}} /><div class="inst-item"></div></div></a></div>'
     });
     userFeed.run();
 </script>

@@ -435,7 +435,7 @@ ul.mobile-sub-main-menu li a {
 .header-main {
     color: #ffffff;
     background-color: #333333;
-    margin-bottom: 36px;
+    margin: 10px 0 36px 0;
     padding-right: 10px;
     padding-left: 10px;
     font-size: 28px;
@@ -534,9 +534,77 @@ ul.mobile-sub-main-menu li a {
     font-weight: 600;
 }
 
-
-
 /*====== END MAIN PRESENTATION COLLECTION ======*/
+.header-main-dark {
+    color: #ffffff;
+    background-color: #333333;
+    margin: 10px 0 0 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 28px;
+    line-height: 39px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.header-main-light{
+    color: #d4d4d4;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+.header-main-light a {
+    color: #d4d4d4;
+}
+.header-main-light a:hover {
+    color: #ccc;
+}
+
+#instafeed {
+    overflow: hidden;
+    text-align: center;
+}
+
+#instafeed img {
+    padding: 10px 0;
+}
+
+.inst-item:before {
+    font-family: 'FontAwesome';
+    content: "\f16d";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    z-index: 1;
+    background: rgba(239, 195, 114, 0.8);
+    background: -moz-linear-gradient(45deg, rgba(239, 195, 114, 0.8) 0%, rgba(150, 67, 167, 0.96) 81%, rgba(150, 67, 167, 1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(239, 195, 114, 0.8)), color-stop(81%, rgba(150, 67, 167, 0.96)), color-stop(100%, rgba(150, 67, 167, 1)));
+    background: -webkit-linear-gradient(45deg, rgba(239, 195, 114, 0.8) 0%, rgba(150, 67, 167, 0.96) 81%, rgba(150, 67, 167, 1) 100%);
+    background: -o-linear-gradient(45deg, rgba(239, 195, 114, 0.8) 0%, rgba(150, 67, 167, 0.96) 81%, rgba(150, 67, 167, 1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(239, 195, 114, 0.8) 0%, rgba(150, 67, 167, 0.96) 81%, rgba(150, 67, 167, 1) 100%);
+    background: linear-gradient(45deg, rgba(239, 195, 114, 0.8) 0%, rgba(150, 67, 167, 0.96) 81%, rgba(150, 67, 167, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efc372', endColorstr='#9643a7', GradientType=1);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 150px;
+    margin: 0 auto;
+    font-size: 50px;
+    color: #fff;
+    line-height: 150px;
+}
+
+.item-img:hover .inst-item:before{
+    visibility: visible;
+    opacity: 1;
+}
 
 /*==========================*/
 /* Large devices , Desktops*/
@@ -655,6 +723,9 @@ ul.mobile-sub-main-menu li a {
 @media only screen and (max-width : 480px) {
     .link-photo-present{
         font-size: 12px;
+    }
+    .header-main, .header-main-dark, .header-main-light {
+        font-size: 18px;
     }
 }
 
