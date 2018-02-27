@@ -161,13 +161,20 @@
 <div class="icon-box-wrapper">
     <div class="container">
         <div class="row">
+            <div class="col-xs-12">
+                <div class="header-main">
+                    Оптовым покупателям
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-sm-12 col-lg-4 col-md-4">
                 <div class="icon-box box-color-one">
                     <div class="icon">
                         <span class="flaticon-add-user"></span>
                     </div>
                     <div class="icon-content">
-                        <h3>Зарегистрироваться или авторизоваться на сайте. Добавить интересующий товар в корзину.</h3>
+                        <h3>Зарегистрироваться и получить доступ к коллекции.</h3>
                     </div>
                     <div class="icon-background">
                         <span class="flaticon-add-user"></span>
@@ -180,7 +187,7 @@
                         <span class="flaticon-add-to-cart"></span>
                     </div>
                     <div class="icon-content">
-                        <h3>Наш менеджер свяжется с вами, согласует заказ и выствит счет на оплату.</h3>
+                        <h3>Купить эксклюзивные головные уборы от производителя.</h3>
                     </div>
                     <div class="icon-background">
                         <span class="flaticon-add-to-cart"></span>
@@ -193,7 +200,7 @@
                         <span class="flaticon-transport"></span>
                     </div>
                     <div class="icon-content">
-                        <h3>Оплатить товар по счету и получить заказ через транспортную компанию.</h3>
+                        <h3>Получить заказ удобным для вас способом.</h3>
                     </div>
                     <div class="icon-background">
                         <span class="flaticon-transport"></span>
@@ -204,9 +211,112 @@
     </div>
 </div>
 
+<div class="present-collection-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="header-main">
+                    Наши модели
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="item-collection">
+                    <a href="#">
+                        <img src="images/main001.jpg" class="opacity">
+                        <div class="link-photo-present">В каталог товаров...</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="item-collection">
+                    <a href="#">
+                        <img src="images/main002.jpg" class="opacity">
+                        <div class="link-photo-present">В каталог товаров...</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="item-collection">
+                    <a href="#">
+                        <img src="images/main003.jpg" class="opacity">
+                        <div class="link-photo-present">В каталог товаров...</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="item-collection">
+                    <a href="#">
+                        <img src="images/main004.jpg" class="opacity">
+                        <div class="link-photo-present">В каталог товаров...</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="item-collection">
+                    <a href="#">
+                        <img src="images/main005.jpg" class="opacity">
+                        <div class="link-photo-present">В каталог товаров...</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="item-collection">
+                    <a href="#">
+                        <img src="images/main006.jpg" class="opacity">
+                        <div class="link-photo-present">В каталог товаров...</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="item-collection">
+                    <a href="#">
+                        <img src="images/main007.jpg" class="opacity">
+                        <div class="link-photo-present">В каталог товаров...</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="item-collection">
+                    <a href="#">
+                        <img src="images/main008.jpg" class="opacity">
+                        <div class="link-photo-present">В каталог товаров...</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3 visible-sm">
+                <div class="item-collection">
+                    <a href="#">
+                        <img src="images/main009.jpg" class="opacity">
+                        <div class="link-photo-present">В каталог товаров...</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="instagram-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="header-main">
+                    Мы в instagram
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="instafeed"></div>
+        </div>
+    </div>
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="js/instafeed.min.js"></script>
 
 <script>
     $(document).ready(function(){
@@ -308,6 +418,15 @@
         });
 
     });
+</script>
+
+<script type="text/javascript">
+    var userFeed = new Instafeed({
+        get: 'user',
+        userId: '3442837669',
+        accessToken: '3442837669.d6f6d4a.601810ef0db54270a4ae9325770e3d0a'
+    });
+    userFeed.run();
 </script>
 
 </body>

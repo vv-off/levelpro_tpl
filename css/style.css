@@ -393,7 +393,7 @@ ul.mobile-sub-main-menu li a {
     text-align: center;
     padding: 0 20px;
     width: auto;
-    background-color: #000;
+    background-color: #333;
     text-decoration: none;
     color: #fff;
     transition-duration: .5s;
@@ -432,6 +432,20 @@ ul.mobile-sub-main-menu li a {
 }
 /*===== END MAIN BANNER ======*/
 
+.header-main {
+    color: #ffffff;
+    background-color: #333333;
+    margin-bottom: 36px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 28px;
+    line-height: 39px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
 /*===== ICON-BOX ======*/
 
 .icon-box-wrapper {
@@ -449,7 +463,11 @@ ul.mobile-sub-main-menu li a {
 .box-color-two{ background-color: #ffece8; }
 .box-color-three{ background-color: #dbfef8; }
 
-.icon { float: left; }
+.icon {
+    float: left;
+    position: relative;
+    z-index: 2;
+}
 .icon, .icon-content { color: #333; }
 
 .icon-content {
@@ -461,7 +479,7 @@ ul.mobile-sub-main-menu li a {
 }
 
 .icon-content h3 {
-    font-size: 14px;
+    font-size: 16px;
     margin: 30px 0;
 }
 
@@ -479,6 +497,46 @@ ul.mobile-sub-main-menu li a {
 
 
 /*===== END ICON-BOX ======*/
+
+/*====== MAIN PRESENTATION COLLECTION ======*/
+.item-collection {
+    margin: 0 0 20px 0;
+    position: relative;
+    padding: 10px;
+    border-left: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+}
+
+.item-collection img {
+
+}
+
+.link-photo-present {
+    position: absolute;
+    bottom: 9px;
+    right: 0;
+}
+
+.link-photo-present {
+    display: none;
+}
+
+.item-collection:hover .link-photo-present {
+    display: block;
+}
+
+.link-photo-present{
+    padding: 10px 20px 10px 10px;
+    font-size: 14px;
+    background: #333333;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+/*====== END MAIN PRESENTATION COLLECTION ======*/
 
 /*==========================*/
 /* Large devices , Desktops*/
@@ -503,6 +561,12 @@ ul.mobile-sub-main-menu li a {
 
     .cart > a, .search > a {
         font-size: 14px;
+    }
+    .icon-content h3 {
+        font-size: 12px;
+    }
+    .icon-content {
+        padding-left: 10px;
     }
 }
 /* Medium Devices, Desktops */
@@ -540,6 +604,13 @@ ul.mobile-sub-main-menu li a {
         text-align: center;
         float: right;
         cursor: pointer;
+    }
+
+    .icon-content h3 {
+        font-size: 16px;
+    }
+    .icon-content {
+        padding-left: 20px;
     }
 
 }
@@ -582,7 +653,9 @@ ul.mobile-sub-main-menu li a {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+    .link-photo-present{
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width : 360px) {
